@@ -1,0 +1,24 @@
+1 VERSIONINFO
+FILEVERSION     1,4,1,0
+PRODUCTVERSION  1,4,1,0
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "040904E4"
+    BEGIN
+      VALUE "Type", "A basic C++ Command-line Shell"
+      VALUE "CompanyName", "Ahmed Amr"
+      VALUE "FileDescription", "VM"
+      VALUE "FileVersion", "1.4.1 Stable Release"
+      VALUE "InternalName", "VM"
+      VALUE "LegalCopyright", "Ahmed Amr"
+      VALUE "OriginalFilename", "VM.exe"
+      VALUE "ProductName", "VM"
+      VALUE "ProductVersion", "1.4.1 Stable Release"
+    END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0x409, 1252
+  END
+END
