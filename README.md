@@ -40,4 +40,4 @@ you can replace `VER.res` with the name of the output file you want *example:`wi
 
 **`Thanks for using VM and reading the instructions.`**
 
-*Coded with ♥ in 🇪🇬 by Ahmed Amr 2021*
+*Coded with ♥ in 🇪🇬 by Ahmed Amr 2021.*
