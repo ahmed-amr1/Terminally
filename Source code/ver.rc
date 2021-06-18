@@ -1,0 +1,24 @@
+1 VERSIONINFO
+FILEVERSION     1,6,18,21
+PRODUCTVERSION  1,6,18,21
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "040904E4"
+    BEGIN
+      VALUE "Type", "A basic C++ Command-line Shell"
+      VALUE "CompanyName", "Ahmed Amr"
+      VALUE "FileDescription", "VM"
+      VALUE "FileVersion", "1.6.18.21 Stable Release"
+      VALUE "InternalName", "Terminally"
+      VALUE "LegalCopyright", "Ahmed Amr"
+      VALUE "OriginalFilename", "Terminally.exe"
+      VALUE "ProductName", "Terminally"
+      VALUE "ProductVersion", "1.6.18.21 Stable Release"
+    END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0x409, 1252
+  END
+END
