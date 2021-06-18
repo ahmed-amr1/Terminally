@@ -46,7 +46,12 @@ you can replace `VER.res` with the name of the output file you want *example:`wi
 5) Compile 4) compile the version file with the program or compile both the icon and version file with the program by typing
 `g++ -o VM VM.cpp` `ICON.res` `VER.res` in the command line.
 
+**Important note if you want to use the source code**
+*Please don't remove the following files from the VM.exe directory : *`Data.dat` And `instructions`.
+
+
 **`Thanks for using VM and reading the instructions.`**
+
 **__Hope you enjoyed the shell!__**
 
-*Coded with ♥ in 🇪🇬 by Ahmed Amr 2021.*
+*Coded with Love ♥ , Passion & C++ in 🇪🇬 by Ahmed Amr 2021.*
