@@ -1,4 +1,4 @@
-﻿//the beginning of the program
+//the beginning of the program
 #include <iostream>  //for some basic stuff
 #include <string>    //for some basic functions like substr()
 #include <fstream>   //for opening and etiting files
@@ -21,6 +21,7 @@ void clscrn() {
     system("clear");
     #endif
 }
+//making a function that converts numbers from 0 to 16 into hexadecimal values
 string conv(int x,string var){
     if (x == 0)
         var = "0";
@@ -57,6 +58,8 @@ string conv(int x,string var){
     cout << var;
     return var;
 }
+//making the law of converting rgb to hex
+//I spent some time on the internet until I made this law
 string rgbToHex(float r,float g,float b){
     cout << "#";
     string r1,g1,b1,r2,g2,b2;
@@ -678,6 +681,7 @@ int main(){
             else
                 cout << num << " isn't a prime number\n";
         }
+        //This is the rest of the rgb-to-hex command
         if (option == "rgb-to-hex"){
             int R,G,B;
             string aar,gee,bee;
