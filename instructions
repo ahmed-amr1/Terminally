@@ -5,20 +5,20 @@ v1.4 Stable release.
 cls,clear                   ==> Clears the console.
 whoami                      ==> Outputs the user name.
 username <Argument>         ==> Changes the username.			                                    (Default:Root)
-machine <Argument>          ==> Changes the machine name.					                        (Default:Terminally)
+machine <Argument>          ==> Changes the machine name.					                            (Default:Terminally)
 leave,quit                  ==> Exits the Shell.
-version,-v                  ==> Outputs the Shell version.				                            (Current:"v1.4.1 stable release")
-echo <color> <Argument>     ==> Outputs the given argument.                                         (Note:The color is optional,colors=[red,blue,green,yellow,purple,cyan])  
+version,-v                  ==> Outputs the Shell version.				                            (Current:"v1.6.18.21 stable release")
+echo <color> <Argument>     ==> Outputs the given argument.                                   (Note:The color is optional)  
 find <Acronym>              ==> Searches for the given argument and returns its definition.                   
 touch <File Name>           ==> Creates a file with the name of the given argument.                         
 len <Argument>              ==> Outputs the number of characters in the given argument.                     
 help                        ==> Returns this message.                                                    
 cat <File Name>             ==> Reads a file with the name of the given argument.                        
-cat > <File Name>           ==> Writes data in a file with the name of the given argument.	        (Note:Replaces old data with new one)
-cat >> <File Name>          ==> Appends data in a file with the name of the given argument.         (Note:Appends new data to the old data)
+cat > <File Name>           ==> Writes data in a file with the name of the given argument.	  (Note:Replaces old data with new one)
+cat >> <File Name>          ==> Appends data in a file with the name of the given argument.   (Note:Appends new data to the old data)
 encrypt <Argument>          ==> Outputs an encryption of the given argument.                                
 decrypt <Argument>          ==> Outputs a decryption of the encrypted given argument.                     
-time                        ==> Outputs the current local time.                                     (Pattern:HH:MM:SS)
+time                        ==> Outputs the current local time.                               (Pattern:HH:MM:SS)
 year                        ==> Outputs the current year.                                    
 date                        ==> Outputs the current local date.                              
 def <Argument>              ==> Outputs the definition of the acronym equal to the given argument.
@@ -37,6 +37,7 @@ system info                 ==> Outputs some information about hardware.
 v1.6.18.21 Stable release.
 
 prime <integer>             ==> Checks if the given integer is prime or not.
+rgb-to-hex                  ==> converts the rgb color to a hexadecimal one.
 
 New additional features:
 
@@ -45,3 +46,5 @@ example.com Or https://www.example.com Or http://www.example.com Or https://exam
 And the shell will redirect you to the given url.
 
 2) You can type <def count> to see the number of acronyms built-in the shell.
+
+3) Fixed some bugs and issues in "username" and "machine" commands.
