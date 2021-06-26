@@ -272,6 +272,9 @@ int main()
     mciSendString("open click.wav type waveaudio alias song",NULL,0,NULL);
     //making an infinite loop
     while (true){
+        char Lcwd[256];
+        if (getcwd(Lcwd,sizeof(Lcwd)) != NULL){
+        }
         //getting the username and machine name from data.dat file
         fstream Data,song;
         string cWd = cwd;
@@ -306,7 +309,9 @@ int main()
         if (getcwd(loopcwd,sizeof(loopcwd)) != NULL){
         }
         //defining the "[ username@machine ]cwd~$" prefix
-        string PS = Green + "[ " + username + "@" + machine + " ]" + Yellow + cWd + Blue + "~" + Color_Off + "$ ";
+        string bgreen = "\e[1;32m";
+        string bwhite = "\e[1;37m";
+        string PS = bgreen  + "[ " + username + "@" + machine + " ]" + bwhite + Lcwd + Blue + "~" + Color_Off + "$ ";
         cout << PS;
         //getting input from the user
         getline(cin,option);
@@ -590,7 +595,7 @@ int main()
             chdir("..");
         }
         //making cd command
-        if (option.find("cd ") == 0){
+        else if (option.find("cd ") == 0){
             //defining the argument
             string dir = option.substr(3);
             char Directory[256];
