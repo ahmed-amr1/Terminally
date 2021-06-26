@@ -1,7 +1,8 @@
 
 # Terminally v1.6.26.21 Stable-release
 **Terminally** (v1.6.26.21 stable release) is a basic command-line shell made with C++.
-![Terminally official preview](https://user-images.githubusercontent.com/83289040/123524600-c5ca3280-d6cb-11eb-9cde-398550fc3bd6.png)
+![Terminally official preview](https://user-images.githubusercontent.com/83289040/123524909-856bb400-d6cd-11eb-821e-a7f81ab4673b.png)
+
 
 # Instructions
 
