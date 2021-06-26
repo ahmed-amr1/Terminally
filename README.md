@@ -1,6 +1,6 @@
 
-# Terminally v1.6.18.21 Stable-release
-**Terminally** (v1.6.18.21 stable release) is a basic command-line shell made with C++.
+# Terminally v1.6.26.21 Stable-release
+**Terminally** (v1.6.26.21 stable release) is a basic command-line shell made with C++.
 ![Screenshot_2021-06-16_20-04-00](https://user-images.githubusercontent.com/83289040/122277444-31e7b200-cee6-11eb-8583-563a35c9184f.png)
 
 # Instructions
@@ -31,7 +31,7 @@ Now you are ready to run the program.
 
 3) Type `windres icon.rc -O coff -o ICON.res` to compile the icon file.
 
-4) Type `windres my.rc -O coff -o my.res` to compile the version file.
+4) Type `windres ver.rc -O coff -o VER.res` to compile the version file.
 
 5) Type `g++ -o Terminally Terminally.cpp ICON.res VER.res` to compile the program with the version and the icon files.
 
@@ -55,7 +55,7 @@ you can replace `ICON.res` with the name of the output file you want *example:`w
 
 2) Customize fields like ``VALUE "Type", "A basic C++ Command-line Shell"`` **<-- this string can be editable**.
 
-3) You can also change both `FILEVERSION     1,6,18,21`**<--** and `PRODUCTVERSION  1,6,18,21`**<--**.
+3) You can also change both `FILEVERSION     1,6,26,21`**<--** and `PRODUCTVERSION  1,6,26,21`**<--**.
 
 4) Open the command line and type `windres ver.rc -O coff -o VER.res` to compile the version file (You can replace `ver.rc` with the name of the `.rc` file you created and 
 you can replace `VER.res` with the name of the output file you want *example:`windres ver.rc -O coff -o example.res`* but the file must be a `.res` file).
