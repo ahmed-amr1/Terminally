@@ -31,13 +31,21 @@ pwd                         ==> Outputs the current working directory.
 v1.4.1 Stable release.
 
 Lorem Ipsum                 ==> Outputs "Lorem Ipsum" used since 1500s.
-search <Argument>           ==> Searches for the given argument via google search engine.
 system info                 ==> Outputs some information about hardware.
 
 v1.6.18.21 Stable release.
 
 prime <integer>             ==> Checks if the given integer is prime or not.
 rgb-to-hex                  ==> converts the rgb color to a hexadecimal one.
+
+v1.6.26.21 Stable release.
+
+google <Argument>           ==> Searches for the given argument via Google search engine.
+bing <Argument>             ==> Searches for the given argument via Microsoft Bing search engine.
+yahoo <Argument>            ==> Searches for the given argument via Yahoo search engine.
+duckduckgo <Argument>       ==> Searches for the given argument via Duckduckgo search engine.
+play                        ==> Enables the sound when you open the program or press [ENTER].
+mute                        ==> Disables the sound when you open the program or press [ENTER].
 
 New additional features:
 
@@ -48,3 +56,5 @@ And the shell will redirect you to the given url.
 2) You can type <def count> to see the number of acronyms built-in the shell.
 
 3) Fixed some bugs and issues in "username" and "machine" commands.
+
+4) Changed the look of the prefix
