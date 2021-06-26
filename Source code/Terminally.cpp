@@ -9,6 +9,8 @@
 #include <ctime>     //for the time commands
 #include <unistd.h>  //for system stuff
 #include <windows.h> //for system stuff too
+//adding the WinMM.lib to the program to play music
+#pragma comment(lib,"Winmm.lib")
 using namespace std;
 //defining that the clscrn() function should run on windows
 #define WINDOWS 1
@@ -86,7 +88,8 @@ string rgbToHex(float r,float g,float b){
 
 }
 //the main function
-int main(){
+int main()
+{
     //system info
     SYSTEM_INFO sysinfo;
     GetSystemInfo(&sysinfo);
@@ -252,7 +255,10 @@ int main(){
         {"MPEG","Moving Picture Expertss Group"},
         {"USD","United States Dollar"},
         {"EUR","European Monetary Unit"},
-        {"EGP","Egyptian Pound"}
+        {"EGP","Egyptian Pound"},
+        {"FAQ","Frequently Asked Questions"},
+        {"IDGAF","I Don't Give A Fuck"},
+        {"SSD","Solid-State Drive"}
     };
     //clears the console
     clscrn();
@@ -262,14 +268,18 @@ int main(){
     char cwd[256];
     if (getcwd(cwd,sizeof(cwd)) != NULL){
     }
+    //opening a wav file
+    mciSendString("open click.wav type waveaudio alias song",NULL,0,NULL);
     //making an infinite loop
     while (true){
         //getting the username and machine name from data.dat file
-        fstream Data;
+        fstream Data,song;
         string cWd = cwd;
         string CWD = cWd +"\\";
         string DATA = CWD + "Data.dat";
+        string SONG = CWD + "audio.prop";
         char dat[40];
+        char wav[11];
         strcpy(dat,DATA.c_str());
         Data.open(dat,ios::in);
         string data;
@@ -279,12 +289,24 @@ int main(){
         int pos = username.length() + 1;
         string machine = data.substr(pos);
         Data.close();
+        //checking if the click sound should be played or not
+        strcpy(wav,SONG.c_str());
+        song.open(wav,ios::in);
+        string aud;
+        getline(song,aud);
+        if (aud == "play"){
+            //playing the wav file when pressing [ENTER]
+            mciSendString("play song from 0",NULL,0,NULL);
+        }
+        if (aud == "mute")
+            mciSendString("pause song",NULL,0,NULL);
+        song.close();
         //getting the current working directory whenever the loop begins
         char loopcwd[256];
         if (getcwd(loopcwd,sizeof(loopcwd)) != NULL){
         }
-        //defining the username@machine:~$ prefix
-        string PS = Green + username + "@" + machine + Color_Off +":" + Blue + "~" + Color_Off + "$ ";
+        //defining the "[ username@machine ]cwd~$" prefix
+        string PS = Green + "[ " + username + "@" + machine + " ]" + Yellow + cWd + Blue + "~" + Color_Off + "$ ";
         cout << PS;
         //getting input from the user
         getline(cin,option);
@@ -358,6 +380,18 @@ int main(){
         //whoami command
         if (option == "whoami"){
             cout << username << endl;
+        }
+        //making a command to mute the click sound
+        if (option == "mute"){
+            song.open(wav,ios::out);
+            song << "mute";
+            song.close();
+        }
+        //making a command to enable the click sound
+        if (option == "play"){
+            song.open(wav,ios::out);
+            song << "play";
+            song.close();
         }
         //exit command
         if (option == "leave" || option == "quit"){
@@ -567,10 +601,34 @@ int main(){
                 cout << "Invalid Directory." << '\n';
             }
         }
-        //making a command that searches for a string
-        if (option.find("search ") == 0){
-            //defining the argument and appending google link to it
+        //making a command that searches for a string in Google
+        if (option.find("google ") == 0){
+            //defining the argument and appending Google link to it
             string result ="https://www.google.com/search?q=" + option.substr(7);
+            char url[256];
+            strcpy(url,result.c_str());
+            ShellExecute(NULL, "open", url, NULL, NULL, SW_SHOWNORMAL);
+        }
+        //making a command that searches for a string in Bing
+        if (option.find("bing ") == 0){
+            //defining the argument and appending Bing link to it
+            string result ="https://www.bing.com/search?q=" + option.substr(5);
+            char url[256];
+            strcpy(url,result.c_str());
+            ShellExecute(NULL, "open", url, NULL, NULL, SW_SHOWNORMAL);
+        }
+        //making a command that searches for a string in Yahoo
+        if (option.find("yahoo ") == 0){
+            //defining the argument and appending Yahoo link to it
+            string result ="https://search.yahoo.com/search?p=" + option.substr(6);
+            char url[256];
+            strcpy(url,result.c_str());
+            ShellExecute(NULL, "open", url, NULL, NULL, SW_SHOWNORMAL);
+        }
+        //making a command that searches for a string in Duckduckgo
+        if (option.find("duckduckgo ") == 0){
+            //defining the argument and appending Duckduckgo link to it
+            string result ="https://duckduckgo.com/?q=" + option.substr(11);
             char url[256];
             strcpy(url,result.c_str());
             ShellExecute(NULL, "open", url, NULL, NULL, SW_SHOWNORMAL);
