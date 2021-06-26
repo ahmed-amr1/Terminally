@@ -1,7 +1,7 @@
 
 # Terminally v1.6.26.21 Stable-release
 **Terminally** (v1.6.26.21 stable release) is a basic command-line shell made with C++.
-![GH](https://user-images.githubusercontent.com/83289040/123518584-60d6f400-d65b-11eb-8cf1-0f4d8f4277b5.png)
+![Terminally official preview](https://user-images.githubusercontent.com/83289040/123524600-c5ca3280-d6cb-11eb-9cde-398550fc3bd6.png)
 
 # Instructions
 
@@ -19,7 +19,7 @@ And the shell will redirect you to the given url.**
 **To compile the program without the icon and version info do the following:**
 1) Open the command-line.
 
-2) Type `g++ -o Terminally Terminally.cpp` and hit enter.
+2) Type `g++ -o Terminally Terminally.cpp -lWinmm` and hit enter.
 
 Now you are ready to run the program.
 
@@ -33,7 +33,7 @@ Now you are ready to run the program.
 
 4) Type `windres ver.rc -O coff -o VER.res` to compile the version file.
 
-5) Type `g++ -o Terminally Terminally.cpp ICON.res VER.res` to compile the program with the version and the icon files.
+5) Type `g++ -o Terminally Terminally.cpp ICON.res VER.res -lWinmm` to compile the program with the version and the icon files.
 
 **To customize the icon do the following:**
 
@@ -47,7 +47,7 @@ Now you are ready to run the program.
 you can replace `ICON.res` with the name of the output file you want *example:`windres icon.rc -O coff -o example.res`* but the file must be a `.res` file).
 
 4) Compile the icon file with the program or compile both the icon and version file with the program by typing
-`g++ -o Terminally Terminally.cpp ICON.res VER.res` in the command line.
+`g++ -o Terminally Terminally.cpp ICON.res VER.res -lWinmm` in the command line.
 
 **To customize the version file do the following:**
 
@@ -61,7 +61,7 @@ you can replace `ICON.res` with the name of the output file you want *example:`w
 you can replace `VER.res` with the name of the output file you want *example:`windres ver.rc -O coff -o example.res`* but the file must be a `.res` file).
 
 5) Compile the version file with the program or compile both the icon and version file with the program by typing
-`g++ -o Terminally Terminally.cpp ICON.res VER.res` in the command line.
+`g++ -o Terminally Terminally.cpp ICON.res VER.res  -lWinmm` in the command line.
 
 # RGB to hexadecimal
 "To convert an RGB value to a Hexadecimal color :"
@@ -108,6 +108,7 @@ and x y and z = `#782DCB`
 # **Important note:**
 
 ***Please don't remove the following files from the Terminally.exe directory :*** `Data.dat` , `instructions` And `audio.prop`.
+***The -lWinmm command used in mingw64 is for the sound of the shell***
 
 # ***Credits***
 
