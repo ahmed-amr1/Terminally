@@ -91,7 +91,7 @@ so the hex will be equal to `#780000`
 
 Note:
 
-0,1,2,3,4,5,6,7,8,9,10 is A,11 is B,12 is C,13 is D,14 is E,15 is F
+0,1,2,3,4,5,6,7,8,9,(10 is A),11 is B,12 is C,13 is D,14 is E,15 is F
 
 so converting Z will be
 
@@ -107,7 +107,7 @@ and x y and z = `#782DCB`
 
 # **Important note:**
 
-***Please don't remove the following files from the Terminally.exe directory :*** `Data.dat` And `instructions`.
+***Please don't remove the following files from the Terminally.exe directory :*** `Data.dat` , `instructions` And `audio.prop`.
 
 # ***Credits***
 
