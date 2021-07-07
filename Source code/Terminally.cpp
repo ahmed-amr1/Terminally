@@ -308,10 +308,19 @@ int main()
         char loopcwd[256];
         if (getcwd(loopcwd,sizeof(loopcwd)) != NULL){
         }
-        //defining the "[ username@machine ]cwd~$" prefix
+        //defining the "[ username@machine ]cwd~$" prefix color
         string bgreen = "\e[1;32m";
         string bwhite = "\e[1;37m";
-        string PS = bgreen  + "[ " + username + "@" + machine + " ]" + bwhite + Lcwd + Blue + "~" + Color_Off + "$ ";
+        //defining that we want get the current working folder not the whole directory
+        string shortCwd;
+        string currentWorkingDir = Lcwd;
+        for (int i = currentWorkingDir.length() - 1;i >= 0;i--){
+            shortCwd += currentWorkingDir[i];
+        }
+        shortCwd = shortCwd.substr(0,shortCwd.find("\\"));
+        reverse(shortCwd.begin(),shortCwd.end());
+        //defining the "[ username@machine ]cwd~$" prefix
+        string PS = bgreen  + "[ " + username + "@" + machine + " ]" + bwhite + shortCwd + '\\' + Blue + "~" + Color_Off + "$ ";
         cout << PS;
         //getting input from the user
         getline(cin,option);
