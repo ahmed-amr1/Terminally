@@ -4,7 +4,7 @@
 <h3 align="center">Terminally (v1.6.26.21 stable release) is a basic command-line shell made with C++. </h3>
 
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
-[![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+[![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/Ahmed-Amr-Github/Terminally/)
 [![Repository size](https://img.shields.io/github/repo-size/Ahmed-Amr-Github/Terminally?color=purple&label=Size&logo=github)](https://github.com/Ahmed-Amr-Github/Terminally/)
 
 
