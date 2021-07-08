@@ -6,7 +6,8 @@
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 [![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/Ahmed-Amr-Github/Terminally/)
 [![Repository size](https://img.shields.io/github/repo-size/Ahmed-Amr-Github/Terminally?color=purple&label=Size&logo=github)](https://github.com/Ahmed-Amr-Github/Terminally/)
-
+[![Made with cpp](https://img.shields.io/badge/Coded%20with-C%2B%2B-cyan?style=flat&logo=c++)](https://en.wikipedia.org/wiki/C%2B%2B)
+[![Made by Ahmed Amr](https://img.shields.io/badge/Credits-Ahmed%20Amr-orange?style=flat)](https://github.com/Ahmed-Amr-Github)
 
 ![Terminally official preview](https://user-images.githubusercontent.com/83289040/123524909-856bb400-d6cd-11eb-821e-a7f81ab4673b.png)
 
