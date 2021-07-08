@@ -5,6 +5,8 @@
 
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 [![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+[![Repository size](https://img.shields.io/github/repo-size/Ahmed-Amr-Github/Terminally?color=purple&label=Size&logo=github)](https://github.com/Ahmed-Amr-Github/Terminally/)
+
 
 ![Terminally official preview](https://user-images.githubusercontent.com/83289040/123524909-856bb400-d6cd-11eb-821e-a7f81ab4673b.png)
 
