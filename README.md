@@ -10,7 +10,7 @@
 [![Made by Ahmed Amr](https://img.shields.io/badge/Credits-Ahmed%20Amr-orange?style=flat)](https://github.com/Ahmed-Amr-Github)
 
 [![Terminally](https://img.shields.io/badge/Terninally-%20Shell-black?style=flat&logo=visual%20studio%20code)](https://github.com/Ahmed-Amr-Github)
-[![OS](https://img.shields.io/badge/OS-windows%2010+-yellowgreen?style=flat&logo=windows)](https://github.com/Ahmed-Amr-Github/Terminally/)
+[![OS](https://img.shields.io/badge/os-windows%2010+-yellowgreen?style=flat&logo=windows)](https://github.com/Ahmed-Amr-Github/Terminally/)
 [![architecture](https://img.shields.io/badge/architecture-32%2F64--bit-yellow?style=flat&logo=windows)](https://github.com/Ahmed-Amr-Github/Terminally/)
 [![made in Egypt](https://img.shields.io/badge/Made%20in-Egypt-darkred?style=flat)](https://github.com/Ahmed-Amr-Github/Terminally/)
 
