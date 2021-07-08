@@ -6,10 +6,13 @@
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 [![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/Ahmed-Amr-Github/Terminally/)
 [![Repository size](https://img.shields.io/github/repo-size/Ahmed-Amr-Github/Terminally?color=purple&label=Size&logo=github)](https://github.com/Ahmed-Amr-Github/Terminally/)
-[![Made with cpp](https://img.shields.io/badge/Coded%20with-C%2B%2B-cyan?style=flat&logo=c++)](https://en.wikipedia.org/wiki/C%2B%2B)
+[![Made with cpp](https://img.shields.io/badge/Coded%20with-C%2B%2B-cyan?style=flat&logo=cplusplus)](https://en.wikipedia.org/wiki/C%2B%2B)
 [![Made by Ahmed Amr](https://img.shields.io/badge/Credits-Ahmed%20Amr-orange?style=flat)](https://github.com/Ahmed-Amr-Github)
+
 [![Terminally](https://img.shields.io/badge/Terninally-%20Shell-black?style=flat&logo=visual%20studio%20code)](https://github.com/Ahmed-Amr-Github)
-[![Package total downloads](https://img.shields.io/packagecontrol/dt/SwitchDictionary.svg)](https://github.com/Ahmed-Amr-Github/Terminally/)
+[![OS](https://img.shields.io/badge/OS-windows%2010+-yellowgreen?style=flat&logo=windows)](https://github.com/Ahmed-Amr-Github/Terminally/)
+[![architecture](https://img.shields.io/badge/architecture-32%2F64--bit-yellow?style=flat&logo=windows)](https://github.com/Ahmed-Amr-Github/Terminally/)
+[![made in Egypt](https://img.shields.io/badge/Made%20in-Egypt-darkred?style=flat)](https://github.com/Ahmed-Amr-Github/Terminally/)
 
 ![Terminally official preview](https://user-images.githubusercontent.com/83289040/123524909-856bb400-d6cd-11eb-821e-a7f81ab4673b.png)
 
