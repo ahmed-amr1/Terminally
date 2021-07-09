@@ -58,3 +58,5 @@ And the shell will redirect you to the given url.
 3) Fixed some bugs and issues in "username" and "machine" commands.
 
 4) Changed the look of the prefix
+
+5) Added some web shortcuts
