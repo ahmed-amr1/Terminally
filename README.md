@@ -4,13 +4,13 @@
 <h3 align="center">Terminally (v1.6.26.21 stable release) is a basic command-line shell made with C++. </h3>
 
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
-[![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/Ahmed-Amr-Github/Terminally/)
+[![Coded via VScode](https://img.shields.io/badge/coded%20via-Visual%20Studio%20Code-007ACC?logo=visualstudiocode)](https://code.visualstudio.com/)
 [![Download Repository](https://img.shields.io/github/repo-size/Ahmed-Amr-Github/Terminally?color=lightgreen&label=Download&logo=github)](https://github.com/Ahmed-Amr-Github/Terminally/archive/refs/heads/main.zip)
 [![Made with cpp](https://img.shields.io/badge/Coded%20with-C%2B%2B-cyan?style=flat&logo=cplusplus)](https://en.wikipedia.org/wiki/C%2B%2B)
 [![Made by Ahmed Amr](https://img.shields.io/badge/Credits-Ahmed%20Amr-orange?style=flat)](https://github.com/Ahmed-Amr-Github)
 
-[![Terminally](https://img.shields.io/badge/Terninally-%20Shell-black?style=flat&logo=visual%20studio%20code)](https://github.com/Ahmed-Amr-Github)
-[![OS](https://img.shields.io/badge/OS-windows%2010+-yellowgreen?style=flat&logo=windows)](https://github.com/Ahmed-Amr-Github/Terminally/)
+[![Terminally](https://img.shields.io/badge/-Terminally-black?style=flat&logo=hyper)](https://github.com/Ahmed-Amr-Github)
+[![OS](https://img.shields.io/badge/OS-windows%2010+-yellowgreen?style=flat&logo=windows)](https://www.microsoft.com/en-us/software-download/windows10ISO)
 [![architecture](https://img.shields.io/badge/architecture-32%2F64--bit-yellow?style=flat&logo=windows)](https://github.com/Ahmed-Amr-Github/Terminally/)
 [![made in Egypt](https://img.shields.io/badge/Made%20in-Egypt-darkred?style=flat)](https://github.com/Ahmed-Amr-Github/Terminally/)
 
