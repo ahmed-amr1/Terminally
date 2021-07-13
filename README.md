@@ -5,7 +5,7 @@
 
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 [![Coded via VScode](https://img.shields.io/badge/coded%20via-Visual%20Studio%20Code-007ACC?logo=visualstudiocode)](https://code.visualstudio.com/)
-[![Download Repository](https://img.shields.io/github/repo-size/Ahmed-Amr-Github/Terminally?color=lightgreen&label=Download&logo=github)](https://github.com/Ahmed-Amr-Github/Terminally/archive/refs/heads/main.zip)
+[![Download Repository](https://img.shields.io/github/repo-size/Ahmed-Amr-Github/Terminally?color=brightgreen&label=Download&logo=github)](https://github.com/Ahmed-Amr-Github/Terminally/archive/refs/heads/main.zip)
 [![Made with cpp](https://img.shields.io/badge/Coded%20with-C%2B%2B-cyan?style=flat&logo=cplusplus)](https://en.wikipedia.org/wiki/C%2B%2B)
 [![Made by Ahmed Amr](https://img.shields.io/badge/Credits-Ahmed%20Amr-orange?style=flat)](https://github.com/Ahmed-Amr-Github/Terminally/)
 
