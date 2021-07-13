@@ -1,6 +1,6 @@
 1 VERSIONINFO
-FILEVERSION     1,6,26,21
-PRODUCTVERSION  1,6,26,21
+FILEVERSION     1,7,13,21
+PRODUCTVERSION  1,7,13,21
 BEGIN
   BLOCK "StringFileInfo"
   BEGIN
@@ -9,12 +9,12 @@ BEGIN
       VALUE "Type", "A basic C++ Command-line Shell"
       VALUE "CompanyName", "Ahmed Amr"
       VALUE "FileDescription", "Terminally"
-      VALUE "FileVersion", "1.6.26.21 Stable Release"
+      VALUE "FileVersion", "v1.7.13.21 Stable Release"
       VALUE "InternalName", "Terminally"
       VALUE "LegalCopyright", "Ahmed Amr"
       VALUE "OriginalFilename", "Terminally.exe"
       VALUE "ProductName", "Terminally"
-      VALUE "ProductVersion", "1.6.26.21 Stable Release"
+      VALUE "ProductVersion", "v1.7.13.21 Stable Release"
     END
   END
   BLOCK "VarFileInfo"

@@ -1,4 +1,5 @@
-﻿//the beginning of the program
+﻿//last edit 10:30pm UTC +2:00 june 13th 2021
+//the beginning of the program
 #include <iostream>         //for some basic stuff
 #include <string>           //for some basic functions like substr()
 #include <fstream>          //for opening and etiting files
@@ -13,16 +14,9 @@
 //adding the WinMM.lib to the program to play music
 #pragma comment(lib,"Winmm.lib")
 using namespace std;
-//defining that the clscrn() function should run on windows
-#define WINDOWS 1
-//making a command that clears the console screen
+//making a command that clears the console
 void clscrn() {
-    #ifdef WINDOWS
     system("cls");
-    #endif
-    #ifdef LINUX
-    system("clear");
-    #endif
 }
 
 //the main function
@@ -198,20 +192,57 @@ int main()
 	    {"PHP","Personal Home Page/PHP Hypertext Preprocessor"},
         {"SDK","Software Development Kit"}
     };
+    //help map
+    map<string,string> Help = {
+        {"credits","gives credits about Terminally creator | no params"},
+        {"contact","undefined"},
+        {"reverse","reverses a param | params: 1 string"},
+        {"encrypt","encrypt a param   | params: 1 string"},
+        {"decrypt","decrypts an encrypted param  | params: 1 string"},
+        {"len","returns the length of a param  | params: 1 string"},
+        {"help","returns this message | params: 1 string"},
+        {"whoami","returns the program username | no params"},
+        {"exit","exits the program | no params"},
+        {"touch","creates a file with the name of the given param | params: 1 string"},
+        {"username","changes the username to the given param | params: 1 string"},
+        {"machine","changes the machine name to the given param | params: 1 string"},
+        {"ls","lists all files and folders in the current working directory | no params"},
+        {"pwd","returns the current working directory | no params"},
+        {"cd","changes the directory to the given param | params: 1 string"},
+        {"cls","clears the screen | no params"},
+        {"def","explains an acronym | params: 1 string"},
+        {"upper","transfers the param into upper case | params: 1 string"},
+        {"lower","transfers the param into lower case | params: 1 string"},
+        {"time","returns the current time | no params"},
+        {"date","returns the current date | no params"},
+        {"year","returns the current year | no params"},
+        {"Loren Ipsum","outputs the lorem ipsum text | no params"},
+        {"prime","outputs if the number is prime or not | params: 1 integer"},
+        {"google","searches for the param in google | params: 1 string"},
+        {"bing","searches for the param in bing | params: 1 string"},
+        {"yahoo","searches for the param in yahoo | params: 1 string"},
+        {"duckduckgo","searches for the param in duckduckgo | params: 1 string"},
+        {"play","enables the program sound | no params"},
+        {"mute","mutes the program sound | no params"},
+        {"echo","repeats a param | params: 1 string or 1 color and 1 string"},
+        {"cat","cat >> FILENAME appends text to a file | params: 1 file\ncat > FILENAME replaces text in a file | params: 1 file\ncat FILENAME outputs text in a file | params: 1 file"}
+    };
     //system info
     SYSTEM_INFO sysinfo;
     GetSystemInfo(&sysinfo);
     //colors variables
-    string Color_Off="\033[0m";
-    string Black="\033[1;30m";      
-    string Red="\033[1;31m";      
-    string Green="\033[1;32m";      
-    string Yellow="\033[1;33m";     
-    string Blue="\033[1;34m";      
-    string Purple="\033[1;35m";      
-    string Cyan="\033[1;36m";      
-    string White="\033[1;37m";      
-
+    string Color_Off,Black,Red,Green,Yellow,Blue,Purple,Cyan,White,bgreen,bwhite;
+    Color_Off="\033[0m";
+    Black="\033[1;30m";      
+    Red="\033[1;31m";      
+    Green="\033[1;32m";      
+    Yellow="\033[1;33m";     
+    Blue="\033[1;34m";      
+    Purple="\033[1;35m";      
+    Cyan="\033[1;36m";      
+    White="\033[1;37m";      
+    bgreen = "\e[1;32m";
+    bwhite = "\e[1;37m";
     //clears the console
     clscrn();
     //defining option
@@ -227,14 +258,14 @@ int main()
         char Lcwd[256];
         if (getcwd(Lcwd,sizeof(Lcwd)) != NULL){
         }
-        //getting the username and machine name from data.dat file
+        //getting the username and machine name from data.dat file reverse
         fstream Data,song;
         string cWd = cwd;
         string CWD = cWd +"\\";
         string DATA = CWD + "Data.dat";
         string SONG = CWD + "audio.prop";
-        char dat[40];
-        char wav[11];
+        char dat[256];
+        char wav[256];
         strcpy(dat,DATA.c_str());
         Data.open(dat,ios::in);
         string data;
@@ -260,9 +291,6 @@ int main()
         char loopcwd[256];
         if (getcwd(loopcwd,sizeof(loopcwd)) != NULL){
         }
-        //defining the "[ username@machine ]cwd~$" prefix color
-        string bgreen = "\e[1;32m";
-        string bwhite = "\e[1;37m";
         //defining that we want get the current working folder not the whole directory
         string shortCwd;
         string currentWorkingDir = Lcwd;
@@ -279,6 +307,31 @@ int main()
         //clear screen command
         if (option == "cls" || option == "clear"){
             clscrn();
+        }
+        //making a help command
+        if (option == "help"){
+            for (auto itr = Help.begin();itr != Help.end();itr++){
+                cout << itr -> first << endl;
+            }
+        }
+        //printing the number of acronyms in the shell
+        else if (option == "command count"){
+            int count = 0;
+            //looping through the map
+            for (auto itr = Help.begin();itr != Help.end();itr++){
+                count++;
+            }
+            cout << "The number of commands built-in the shell is " << count << endl;
+        }
+        //making a command that defines acronyms and making the "def count" command ignore this command
+        else if (option.find("help ") == 0){
+            //defining the argument
+            string command = option.substr(5);
+            //raising an error if the command wasn't found
+            if (Help.find(command) == Help.end()){
+                cout << "(404) Command Not Found.";
+            }
+            cout << Help[command] << '\n';
         }
         //Lorem Ipsum command
         if (option == "Lorem Ipsum"){
@@ -365,7 +418,7 @@ int main()
         }
         //version command
         if (option == "version" || option == "-v"){
-            cout << "Ahmed Amr's Command-Line Shell v1.6.18.21 Stable release.\n";
+            cout << "Ahmed Amr's Command-Line Shell v1.7.13.21 Stable release.\n";
         }
         //echo commands
         //green color
@@ -413,6 +466,11 @@ int main()
             }else{
                 cout << echo << '\n';
             }
+        }
+        if (option.find("reverse ") == 0){
+            string rev = option.substr(8);
+            reverse(rev.begin(),rev.end());
+            cout << rev << endl;
         }
         //printing the number of acronyms in the shell
         if (option == "def count"){
@@ -465,17 +523,6 @@ int main()
             //defining the argument
             string leng = option.substr(4);
             cout << leng.length() << '\n';
-        }
-        //making a help command
-        if (option == "help"){
-            fstream h;
-            h.open("instructions",ios::in);
-            string input;
-            while (h){
-                getline(h,input);
-                cout << input << '\n';
-            }
-            h.close();
         }
         //cat command that reads files
         if (option.find("cat ") == 0){
