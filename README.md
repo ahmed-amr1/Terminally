@@ -1,7 +1,7 @@
 
-<h1 align="center"> Terminally v1.6.26.21 Stable-release </h1>
+<h1 align="center"> Terminally v1.7.13.21 Stable-release </h1>
 
-<h3 align="center">Terminally (v1.6.26.21 stable release) is a basic command-line shell made with C++. </h3>
+<h3 align="center">Terminally (v1.7.13.21 stable release) is a basic command-line shell made with C++. </h3>
 
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 [![Coded via VScode](https://img.shields.io/badge/coded%20via-Visual%20Studio%20Code-007ACC?logo=visualstudiocode)](https://code.visualstudio.com/)
@@ -29,10 +29,12 @@ And the shell will redirect you to the given url.**
 
 3) **Bug fixes.**
 
-4) **Added web shortcuts like `facebook`,`youtube`,`twitter`,`discord` and `github`** 
+4) **Added web shortcuts like `facebook`,`youtube`,`twitter`,`discord` and `github.`** 
+
+5) **Improved help command.**
 </details>
 
-**Make sure to read [instructions file](./instructions)**
+**Make sure to read [instructions file](./instructions.txt)**
 
 # Source code.
 
@@ -85,7 +87,7 @@ you can replace `ICON.res` with the name of the output file you want *example:`w
 
 2) Customize fields like ``VALUE "Type", "A basic C++ Command-line Shell"`` **<-- this string can be editable**.
 
-3) You can also change both `FILEVERSION     1,6,26,21`**<--** and `PRODUCTVERSION  1,6,26,21`**<--**.
+3) You can also change both `FILEVERSION     1,7,13,21`**<--** and `PRODUCTVERSION  1,7,13,21`**<--**.
 
 4) Open the command line and type `windres ver.rc -O coff -o VER.res` to compile the version file (You can replace `ver.rc` with the name of the `.rc` file you created and 
 you can replace `VER.res` with the name of the output file you want *example:`windres ver.rc -O coff -o example.res`* but the file must be a `.res` file).
