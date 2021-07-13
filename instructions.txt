@@ -7,7 +7,7 @@ whoami                      ==> Outputs the user name.
 username <Argument>         ==> Changes the username.			                                    (Default:Root)
 machine <Argument>          ==> Changes the machine name.					                            (Default:Terminally)
 leave,quit                  ==> Exits the Shell.
-version,-v                  ==> Outputs the Shell version.				                            (Current:"v1.6.18.21 stable release")
+version,-v                  ==> Outputs the Shell version.				                            (Current:"v1.7.13.21 stable release")
 echo <color> <Argument>     ==> Outputs the given argument.                                   (Note:The color is optional)  
 def <Acronym>              ==> Searches for the given argument and returns its definition.                   
 touch <File Name>           ==> Creates a file with the name of the given argument.                         
