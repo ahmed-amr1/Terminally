@@ -13,6 +13,7 @@
 [![OS](https://img.shields.io/badge/OS-windows%2010+-yellowgreen?style=flat&logo=windows)](https://www.microsoft.com/en-us/software-download/windows10ISO)
 [![architecture](https://img.shields.io/badge/architecture-32%2F64--bit-yellow?style=flat&logo=intel)](https://en.wikipedia.org/wiki/Comparison_of_instruction_set_architectures)
 [![made in Egypt](https://img.shields.io/badge/Made%20in-Egypt-darkred?style=flat&logo=wikipedia)](https://en.wikipedia.org/wiki/Egypt)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Ahmed-Amr-Github/Terminally?color=darkorange&label=code%20size&logo=cplusplus)
 
 ![Terminally official preview](https://user-images.githubusercontent.com/83289040/123524909-856bb400-d6cd-11eb-821e-a7f81ab4673b.png)
 
