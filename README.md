@@ -48,7 +48,7 @@ And the shell will redirect you to the given url.**
 
 1) Open the command-line.
 
-2) Type `g++ -o Terminally main.cpp -lWinmm` and hit enter.
+2) Type `g++ -o Terminally main.cpp includes/rgb.h -lWinmm` and hit enter.
 
 Now you are ready to run the program.
 </details>
@@ -63,7 +63,7 @@ Now you are ready to run the program.
 
 4) Type `windres ver.rc -O coff -o VER.res` to compile the version file.
 
-5) Type `g++ -o Terminally main.cpp ICON.res VER.res -lWinmm` to compile the program with the version and the icon files.
+5) Type `g++ -o Terminally main.cpp includes/rgb.h ICON.res VER.res -lWinmm` to compile the program with the version and the icon files.
 </details>
 
 <details> <summary> To customize the icon </summary>
@@ -78,7 +78,7 @@ Now you are ready to run the program.
 you can replace `ICON.res` with the name of the output file you want *example:`windres icon.rc -O coff -o example.res`* but the file must be a `.res` file).
 
 4) Compile the icon file with the program or compile both the icon and version file with the program by typing
-`g++ -o Terminally main.cpp ICON.res VER.res -lWinmm` in the command line.
+`g++ -o Terminally main.cpp includes/rgb.h ICON.res VER.res -lWinmm` in the command line.
 </details>
 
 <details> <summary> To customize the version </summary>
@@ -93,7 +93,7 @@ you can replace `ICON.res` with the name of the output file you want *example:`w
 you can replace `VER.res` with the name of the output file you want *example:`windres ver.rc -O coff -o example.res`* but the file must be a `.res` file).
 
 5) Compile the version file with the program or compile both the icon and version file with the program by typing
-`g++ -o Terminally main.cpp ICON.res VER.res  -lWinmm` in the command line.
+`g++ -o Terminally main.cpp includes/rgb.h ICON.res VER.res  -lWinmm` in the command line.
 </details>
 
 <details> <summary> RGB to hexadecimal guide </summary>
@@ -146,7 +146,10 @@ you can replace `VER.res` with the name of the output file you want *example:`wi
 # **Important note:**
 
 ***Please don't remove the following files from the Terminally.exe directory :*** `Data.dat` And `audio.prop`.
+  
 ***The -lWinmm command used in mingw64 is for the sound of the shell***
+  
+***The includes/rgb.h used in mingw64 is for the rgb functions***
 
 # ***Credits***
 
