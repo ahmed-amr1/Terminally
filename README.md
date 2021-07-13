@@ -145,7 +145,7 @@ you can replace `VER.res` with the name of the output file you want *example:`wi
 
 # **Important note:**
 
-***Please don't remove the following files from the Terminally.exe directory :*** `Data.dat` , `instructions` And `audio.prop`.
+***Please don't remove the following files from the Terminally.exe directory :*** `Data.dat` And `audio.prop`.
 ***The -lWinmm command used in mingw64 is for the sound of the shell***
 
 # ***Credits***
