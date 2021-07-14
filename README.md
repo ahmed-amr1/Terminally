@@ -1,7 +1,7 @@
 
 <h1 align="center"> Terminally v1.7.13.21 Stable-release </h1>
 
-<h3 align="center">Terminally (v1.7.13.21 stable release) is a basic command-line shell made with C++. </h3>
+<h3 align="center">Terminally is a basic command-line shell made with C++. </h3>
 
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 [![Coded via VScode](https://img.shields.io/badge/coded%20via-Visual%20Studio%20Code-007ACC?logo=visualstudiocode)](https://code.visualstudio.com/)
