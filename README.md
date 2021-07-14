@@ -1,5 +1,5 @@
 
-<h1 align="center"> Terminally v1.7.13.21 Stable-release </h1>
+<h1 align="center"> Terminally v1.7.13.21 </h1>
 
 <h3 align="center">Terminally is a basic command-line shell made with C++. </h3>
 
@@ -8,7 +8,6 @@
 [![Download Repository](https://img.shields.io/github/repo-size/Ahmed-Amr-Github/Terminally?color=lightgreen&label=Download&logo=github)](https://github.com/Ahmed-Amr-Github/Terminally/archive/refs/heads/main.zip)
 [![Made with cpp](https://img.shields.io/badge/Coded%20with-C%2B%2B-cyan?style=flat&logo=cplusplus)](https://en.wikipedia.org/wiki/C%2B%2B)
 [![Made by Ahmed Amr](https://img.shields.io/badge/Credits-Ahmed%20Amr-orange?style=flat)](https://github.com/Ahmed-Amr-Github/Terminally/)
-
 [![Terminally](https://img.shields.io/badge/-Terminally-black?style=flat&logo=windowsterminal)](https://github.com/Ahmed-Amr-Github)
 [![OS](https://img.shields.io/badge/OS-windows%2010+-yellowgreen?style=flat&logo=windows)](https://www.microsoft.com/en-us/software-download/windows10ISO)
 [![architecture](https://img.shields.io/badge/architecture-32%2F64--bit-yellow?style=flat&logo=intel)](https://en.wikipedia.org/wiki/Comparison_of_instruction_set_architectures)
