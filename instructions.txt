@@ -49,9 +49,11 @@ mute                        ==> Disables the sound when you open the program or 
 
 v1.7.13.21 Stable release.
 
-command count		    ==> Outputs the number of commands in the shell.
-reverse <Argument>	    ==> Outputs Reversed form of the argument.
+command count		            ==> Outputs the number of commands in the shell.
+reverse <Argument>	        ==> Outputs Reversed form of the argument.
 help <command>	            ==> Outputs detailed information about the given command.
+rename                      ==> Renames a file to the given input.
+rm                          ==> Deletes a file or an empty folder.
 
 New additional features:
 
