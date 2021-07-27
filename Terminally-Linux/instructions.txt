@@ -1,0 +1,59 @@
+Welcome & Thanks for using Terminally Shell (v1.7.13.21 Stable release).
+Type <credits> or <contact> for more info.
+
+v1.4 Stable release.
+cls,clear                   ==> Clears the console.
+whoami                      ==> Outputs the user name.
+username <Argument>         ==> Changes the username.			                                    (Default:Root)
+machine <Argument>          ==> Changes the machine name.					                            (Default:Terminally)
+leave,quit                  ==> Exits the Shell.
+version,-v                  ==> Outputs the Shell version.				                            (Current:"v1.7.13.21 stable release")
+echo <color> <Argument>     ==> Outputs the given argument.                                   (Note:The color is optional)  
+def <Acronym>              ==> Searches for the given argument and returns its definition.                   
+touch <File Name>           ==> Creates a file with the name of the given argument.                         
+len <Argument>              ==> Outputs the number of characters in the given argument.                     
+help                        ==> Returns this message.                                                    
+cat <File Name>             ==> Reads a file with the name of the given argument.                        
+cat > <File Name>           ==> Writes data in a file with the name of the given argument.	  (Note:Replaces old data with new one)
+cat >> <File Name>          ==> Appends data in a file with the name of the given argument.   (Note:Appends new data to the old data)
+encrypt <Argument>          ==> Outputs an encryption of the given argument.                                
+decrypt <Argument>          ==> Outputs a decryption of the encrypted given argument.                     
+time                        ==> Outputs the current local time.                               (Pattern:HH:MM:SS)
+year                        ==> Outputs the current year.                                    
+date                        ==> Outputs the current local date.                              
+def <Argument>              ==> Outputs the definition of the acronym equal to the given argument.
+upper <Argument>            ==> Outputs the given argument in uppercase letters.
+lower <Argument>            ==> Outputs the given argument in lowercase letters.
+ls                          ==> Outputs a list of all files and folders in the current directory.
+cd <Directory>              ==> Changes the directory to a directory equal to the given argument.
+pwd                         ==> Outputs the current working directory.
+
+v1.4.1 Stable release.
+
+Lorem Ipsum                 ==> Outputs "Lorem Ipsum" used since 1500s.
+
+v1.6.18.21 Stable release.
+
+prime <integer>             ==> Checks if the given integer is prime or not.
+
+v1.7.13.21 Stable release.
+
+command count		    ==> Outputs the number of commands in the shell.
+reverse <Argument>	    ==> Outputs Reversed form of the argument.
+help <command>	            ==> Outputs detailed information about the given command.
+rename                      ==> Renames a file to the given input.
+rm                          ==> Deletes a file or an empty folder.
+
+New additional features:
+
+1) You can type:
+example.com Or https://www.example.com Or http://www.example.com Or https://example.com Or http://example.com
+And the shell will redirect you to the given url.
+
+2) You can type <def count> to see the number of acronyms built-in the shell.
+
+3) Fixed some bugs and issues in "username" and "machine" commands.
+
+4) Changed the look of the prefix
+
+5) Improved the "help" command
