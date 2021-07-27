@@ -230,6 +230,71 @@ int main()
         {"echo","repeats a param | params: 1 string or 1 color and 1 string"},
         {"cat","cat >> FILENAME appends text to a file | params: 1 file\ncat > FILENAME replaces text in a file | params: 1 file\ncat FILENAME outputs text in a file | params: 1 file"}
     };
+    map <int,string> Wise = {
+        {0,"Be yourself; everyone else is already taken. - Oscar Wilde"},
+        {1,"I'm selfish, impatient and a little insecure.\nI make mistakes, I am out of control and at times hard to handle.\nBut if you can't handle me at my worst, then you sure as hell don't deserve me at my best. - Marilyn Monroe"},
+        {2,"Two things are infinite: the universe and human stupidity; and I'm not sure about the universe. - Albert Einstein"},
+        {3,"Be the change that you wish to see in the world. - Mahatma Gandhi"},
+        {4,"A day without laughter is a day wasted. - Nicolas Chamfort"},
+        {5,"There is nothing either good or bad, but thinking makes it so. - William Shakespear, Hamlet"},
+        {6,"Trust yourself. You know more than you think you do. - Benjamin Spock"},
+        {7,"Love For All, Hatred For None. - Khalifatul Masih III"},
+        {8,"Change the world by being yourself. - Amy Poehler"},
+        {9,"Every moment is a fresh beginning. - T.S Eliot"},
+        {10,"Never regret anything that made you smile. - Mark Twain"},
+        {11,"Die with memories, not dreams. - Unknown"},
+        {12,"Aspire to inspire before we expire. - Unknown"},
+        {13,"Everything you can imagine is real. - Pablo Picasso"},
+        {14,"Simplicity is the ultimate sophistication. - Leonardo da Vinci"},
+        {15,"Whatever you do, do it well. - Walt Disney"},
+        {16,"What we think, we become. - Buddha"},
+        {17,"All limitations are self-imposed. - Oliver Wendell Holmes"},
+        {18,"Tough times never last but tough people do. - Robert H. Schiuller"},
+        {19,"Kindness is a mark of faith, and whoever has not kindness has not faith. - Prophet Muhammad"},
+        {20,"Problems are not stop signs, they are guidelines. - Robert H. Schiuller"},
+        {21,"One day the people that don't even believe in you will tell everyone how they met you. - Johnny Depp"},
+        {22,"I have nothing to lose but something to gain. - Eminem"},
+        {23,"I will remember and recover, not forgive and forget. - Unknown"},
+        {24,"Happiness depends upon ourselves. - Aristotle"},
+        {25,"Change the game, don't let the game change you. - Macklemore"},
+        {26,"When words fail, music speaks. - Shakespeare"},
+        {27,"Strive for greatness. - Lebron James"},
+        {28,"To live will be an awfully big adventure. - Peter Pan"},
+        {29,"And still, I rise. - Maya Angelou"},
+        {30,"Never let your emotions overpower your intelligence. - Drake"},
+        {31,"Yesterday you said tomorrow. Just do it. - Nike"},
+        {32,"It hurt because it mattered. - John Green"},
+        {33,"Turn your wounds into wisdom. - Oprah Winfrey"},
+        {34,"If I'm gonna tell a real story, I'm gonna start with my name. - Kendrick Lamar"},
+        {35,"If you tell the truth you don't have to remember anything. - Mark Twain"},
+        {36,"Have enough courage to start and enough heart to finish. - Jessica N. S. Yourko"},
+        {37,"Hate comes from intimidation, love comes from appreciation. - Tyga"},
+        {38,"I could agree with you but then we'd both be wrong. - Harvey Specter"},
+        {39,"Oh, the things you can find, if you don't stay behind. - Dr. Seuss"},
+        {40,"Determine your priorities and focus on them. - Eileen McDargh"},
+        {41,"Be so good they can't ignore you. - Steve Martin"},
+        {42,"Dream as if you'll live forever, live as if you'll die today. - James Dean"},
+        {43,"I don't need it to be easy, I need it to be worth it. - Lil Wayne"},
+        {44,"Nothing lasts forever but at least we got these memories. - J. Cole"},
+        {45,"Don't you know your imperfections is a blessing? - Kendrick Lamar"},
+        {46,"Reality is wrong, dreams are for real. - Tupac"},
+        {47,"Try to be a rainbow in someone's cloud. - Maya Angelou"},
+        {48,"There is no substitute for hard work. - Thomas Edison"},
+        {49,"What consumes your mind controls your life- Unknown"},
+        {50,"Wanting to be someone else is a waste of who you are. - Kurt Cobain"},
+        {51,"The time is always right to do what is right. - Martin Luther King Jr."},
+        {52,"Let the beauty of what you love be what you do. - Rumi"},
+        {53,"May your choices reflect your hopes, not your fears. - Nelson Mandela"},
+        {54,"A happy soul is the best shield for a cruel world. - Atticus"},
+        {55,"White is not always light and black is not always dark. - Habeeb Akande"},
+        {56,"Life becomes easier when you learn to accept the apology you never got. - R. Brault"},
+        {57,"If the world was blind how many people would you impress? - Boonaa Mohammed"},
+        {58,"The meaning of life is to give life meaning. - Ken Hudgins"},
+        {59,"The true meaning of life is to plant trees, under whose shade you do not expect to sit. - Nelson Henderson"},
+        {60,"Embrace the glorious mess that you are. - Elizabeth Gilbert"},
+        {61,"Normality is a paved road: it's comfortable to walk but no flowers grow. - Vincent van Gogh"}
+
+    };
     //system info
     SYSTEM_INFO sysinfo;
     GetSystemInfo(&sysinfo);
@@ -366,6 +431,21 @@ int main()
                 cout << "(404) Command Not Found.";
             }
             cout << Help[command] << '\n';
+        }
+        //printing the number of quotes in the shell
+        else if (option == "quotes count"){
+            int count = 0;
+            //looping through the map
+            for (auto itr = Wise.begin();itr != Wise.end();itr++){
+                count++;
+            }
+            cout << "The number of quotes built-in the shell is " << count << endl;
+        }
+        //making a command that defines acronyms and making the "def count" command ignore this command
+        else if (option == "quote"){
+            srand(time(NULL));
+            int randomIndex = rand() % 62;
+            cout << Wise[randomIndex] << '\n';
         }
         //Lorem Ipsum command
         if (option == "Lorem Ipsum"){
