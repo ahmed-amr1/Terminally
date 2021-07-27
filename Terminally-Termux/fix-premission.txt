@@ -1,0 +1,3 @@
+run the following command:
+
+chmod 777 Terminally
