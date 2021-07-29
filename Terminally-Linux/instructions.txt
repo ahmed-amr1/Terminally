@@ -46,14 +46,10 @@ rm                          ==> Deletes a file or an empty folder.
 
 New additional features:
 
-1) You can type:
-example.com Or https://www.example.com Or http://www.example.com Or https://example.com Or http://example.com
-And the shell will redirect you to the given url.
+1) You can type <def count> to see the number of acronyms built-in the shell.
 
-2) You can type <def count> to see the number of acronyms built-in the shell.
+2) Fixed some bugs and issues in "username" and "machine" commands.
 
-3) Fixed some bugs and issues in "username" and "machine" commands.
-
-4) Changed the look of the prefix
+3) Changed the look of the prefix
 
 5) Improved the "help" command

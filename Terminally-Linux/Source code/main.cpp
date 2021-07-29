@@ -28,6 +28,7 @@ int main()
     //help map
     map<string,string> Help = {
         {"rename","renames a file (param) to the given input | params:1 file"},
+        {"system","executes a command (param) from the system shell | params:1 command"},
         {"rm","removes a file or an empty folder with the name of the given param | params: 1 file"},
         {"credits","gives credits about Terminally creator | no params"},
         {"contact","undefined"},
@@ -331,8 +332,16 @@ int main()
         int pos = username.length() + 1;
         string machine = data.substr(pos);
         Data.close();
+        //defining that we want get the current working folder not the whole directory
+        string shortCwd;
+        string currentWorkingDir = Lcwd;
+        for (int i = currentWorkingDir.length() - 1;i >= 0;i--){
+            shortCwd += currentWorkingDir[i];
+        }
+        shortCwd = shortCwd.substr(0,shortCwd.find("/"));
+        reverse(shortCwd.begin(),shortCwd.end());
         //defining the "[ username@machine ]cwd~$" prefix
-        string PS = bgreen  + "[ " + username + "@" + machine + " ]" + Blue + "~" + Color_Off + "$ ";
+        string PS = bgreen  + "[ " + username + "@" + machine + " ]" + bwhite + shortCwd + '/' + Blue + "~" + Color_Off + "$ ";
         cout << PS;
         //getting input from the user
         getline(cin,option);
@@ -383,6 +392,12 @@ int main()
                 cout << filename << " wasn't renamed!" << '\n';
             }
             else{}
+        }
+        if (option.find("system ") == 0){
+            string arg = option.substr(7);
+            char argument[90];
+            strcpy(argument,arg.c_str());
+            system(argument);
         }
         //Lorem Ipsum command
         if (option == "Lorem Ipsum"){

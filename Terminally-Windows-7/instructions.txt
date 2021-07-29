@@ -31,7 +31,7 @@ pwd                         ==> Outputs the current working directory.
 v1.4.1 Stable release.
 
 Lorem Ipsum                 ==> Outputs "Lorem Ipsum" used since 1500s.
-system info                 ==> Outputs some information about hardware.
+system-info                 ==> Outputs some information about hardware.
 
 v1.6.18.21 Stable release.
 

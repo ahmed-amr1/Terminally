@@ -196,6 +196,7 @@ int main()
     //help map
     map<string,string> Help = {
         {"rename","renames a file (param) to the given input | params:1 file"},
+        {"system","executes a command (param) from the system shell | params:1 command"},
         {"rm","removes a file or an empty folder with the name of the given param | params: 1 file"},
         {"credits","gives credits about Terminally creator | no params"},
         {"contact","undefined"},
@@ -406,6 +407,12 @@ int main()
                 cout << filename << " wasn't renamed!" << '\n';
             }
             else{}
+        }
+        if (option.find("system ") == 0){
+            string arg = option.substr(7);
+            char argument[90];
+            strcpy(argument,arg.c_str());
+            system(argument);
         }
         //making a help command
         if (option == "help"){
@@ -790,7 +797,7 @@ int main()
             cout << "Konami code seems to be valid lol.\n";
         }
         //making a command that prints system information
-        if (option == "system info"){
+        if (option == "system-info"){
             cout << "Number of processors : "<< sysinfo.dwNumberOfProcessors << endl;
             cout << "Page size : " << sysinfo.dwPageSize << endl;
             cout << "Minimum Application Address : " << sysinfo.lpMinimumApplicationAddress << endl;
