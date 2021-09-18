@@ -16,7 +16,7 @@
 
 
 
-![Terminally official preview](https://github.com/Ahmed-Amr-Github/Terminally/blob/main/preview.png)
+![Terminally official preview](https://github.com/ahmed-amr1/Terminally/blob/main/preview.png)
 
 
 # Instructions
